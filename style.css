@@ -41,18 +41,26 @@ a {
 }
 
 .col2 {
-    display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
+    padding-left: 14px;
+    padding-bottom: 10px;
     width: 50%;
-    left: 50%;
+    left: 47%;
     background-color: rgb(250, 193, 119, 0.96);
 }
 
 .splash_movie {
     width: 100vw;
     height: 50vw;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .logo_lille {
+        height: 15vw;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -92,3 +100,4 @@ a {
     #menuknap {
         display: none;
     }
+}
