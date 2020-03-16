@@ -1,0 +1,94 @@
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    color: #093A82;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+
+.menu {
+    height: 105px;
+    width: 100vw;
+    background-color: #FAC177;
+
+}
+
+.logo_stor {
+    display: none;
+}
+
+.logo_lille {
+    height: 30vw;
+    margin-left: 3vw;
+    margin-top: 5vw;
+    background-color: #FAC177;
+    border-radius: 250px;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+#menuknap {
+    font-family: sans-serif;
+    font-size: 3em;
+    text-align: end;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.col2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    left: 50%;
+    background-color: rgb(250, 193, 119, 0.96);
+}
+
+.splash_movie {
+    width: 100vw;
+    height: 50vw;
+}
+
+@media only screen and (min-width: 1000px) {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo_lille {
+        display: none;
+    }
+
+    .logo_stor {
+        display: block;
+        position: absolute;
+        background-color: #FAC177;
+        border-radius: 250px;
+        height: 12vw;
+        margin-left: 3vw;
+        margin-top: 1vw;
+
+    }
+
+    .col2 {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        flex-direction: row;
+        width: 70vw;
+        left: 0;
+    }
+
+    a {
+        margin-right: 10vw;
+    }
+
+    #menuknap {
+        display: none;
+    }

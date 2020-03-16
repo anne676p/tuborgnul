@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuborg Nul</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="desktop">
+        <div class="menu">
+            <div class="col1">
+                <a href="index.html"> <img class="logo_stor" src="IMG/logo.svg" alt="Tuborg Nul logo"> </a>
+                <a href="index.html"> <img class="logo_lille" src="IMG/logo.svg" alt="Tuborg Nul logo"> </a>
+            </div>
+            <div id="menuknap hidden">☰</div>
+            <div class="col2">
+                <a href="index.html">
+                    <h3> Menupunkt </h3>
+                </a>
+                <a href="index.html">
+                    <h3> Menupunkt </h3>
+                </a>
+                <a href="index.html">
+                    <h3> Menupunkt </h3>
+                </a>
+            </div>
+        </div>
+        <div class="splash_movie">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+        </div>
+        <div class=" container_left scroll_snap_type_y_mandatory">
+            <div class="section_text"> </div>
+            <div class="section_pictur"> </div>
+            <div class="section_text"> </div>
+        </div>
+        <div class="container_right">
+            <div class="section_pictur"> </div>
+            <div class="section_text"> </div>
+            <div class="section_pictur"> </div>
+        </div>
+    </div>
+    <div class="container" id="mobile">
+    </div>
+    <footer></footer>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", sidenVises)
+
+    function sidenVises() {
+        //lytte efter klik på menuknap
+        document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+    }
+
+    function toggleMenu() {
+        console.log("toggleMenu");
+        document.querySelector(".col2").classList.toggle("hidden");
+
+        //let variablen definere hvis menuen er skjult indeholder den class hidden
+
+        let erSkjult = document.querySelector(".col2").classList.contains("hidden");
+
+        //if else sætning med betingelse for textcontent, som udskriver noget i html
+        if (erSkjult == true) {
+            document.querySelector("#menuknap").textContent = "☰";
+        } else {
+            document.querySelector("#menuknap").textContent = "X";
+        }
+    }
+
+</script>
+
+</html>
