@@ -1,3 +1,7 @@
+.section_pictur img {
+    width: 100%;
+}
+
 body {
     display: block;
 }
@@ -139,10 +143,13 @@ section {
 .section_pictur {
     width: 100%;
     height: 50vw;
-    background-color: black;
+    position: relative;
+    align-items: center;
+    background-color: #BEE0D9;
     scroll-snap-align: start;
 
 }
+
 
 
 @media only screen and (max-width: 677px) {
