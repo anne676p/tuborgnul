@@ -17,6 +17,27 @@ h3 {
     letter-spacing: 1px;
 }
 
+h2 {
+    font-family: helvetica neue;
+    color: #093A82;
+    padding: 0;
+    margin: 20px;
+    font-size: 2em;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    color: #FAC177;
+    font-size: 4em;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: helvetica neue;
+    color: #FAC177;
+    font-size: 2em;
+}
+
 .menu {
     height: 105px;
     width: 100vw;
@@ -84,14 +105,14 @@ a {
 
 .container_left {
     width: 50vw;
-    height: 100vh;
+    height: 50vw;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
 
 .container_right {
     width: 50vw;
-    height: 100vh;
+    height: 50vw;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 
@@ -108,21 +129,73 @@ section {
 
 .section_text {
     width: 100%;
-    height: 100vh;
-    background-color: aquamarine;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    background-color: #093A82;
     scroll-snap-align: start;
 }
 
 .section_pictur {
     width: 100%;
-    height: 100vh;
+    height: 50vw;
     background-color: black;
     scroll-snap-align: start;
+
 }
 
+
 @media only screen and (max-width: 677px) {
-    .section pictur {
+
+    #mobile {
+        display: block;
+    }
+
+    .mobile_middel {
+        width: 100vw;
+        scroll-snap-type: y mandatory;
+    }
+
+
+    #desktop {
+        display: none;
+    }
+
+    .wrapper {
+        width: 90vw;
+    }
+
+    .button {
+        margin-top: 7vw;
+        width: 90vw;
         height: auto;
+        position: relative;
+        cursor: pointer;
+        border: solid #F7A437 3px;
+        background-color: #FAC177;
+        text-align: center;
+    }
+
+    .button h2 {
+        font-size: auto;
+    }
+
+    .section_text {
+        height: auto;
+        padding-bottom: 10vw;
+
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .logo_lille {
+        height: 15vw;
+    }
+
+    #desktop {
+        display: none;
     }
 
     #mobile {
@@ -138,17 +211,50 @@ section {
     #desktop {
         display: none;
     }
-}
 
-
-@media only screen and (min-width: 700px) {
-
-    .logo_lille {
-        height: 15vw;
+    .wrapper {
+        width: 90vw;
     }
+
+    .button {
+        margin-top: 7vw;
+        width: 90vw;
+        height: auto;
+        position: relative;
+        cursor: pointer;
+        border: solid #F7A437 3px;
+        background-color: #FAC177;
+        text-align: center;
+    }
+
+    .button h2 {
+        font-size: auto;
+    }
+
+    .section_text {
+        height: auto;
+        padding-bottom: 10vw;
+
+    }
+
 }
 
 @media only screen and (min-width: 1000px) {
+
+    h2 {
+        font-size: 4em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+
+    }
+
+    h1 {
+        font-size: 5em;
+
+    }
+
     .menu {
         display: flex;
         justify-content: space-between;
@@ -193,5 +299,20 @@ section {
 
     #mobile {
         display: none;
+    }
+
+    .wrapper {
+        width: 45vw;
+    }
+
+    .button {
+        margin-top: 7vw;
+        width: 45vw;
+        height: 9vw;
+        position: relative;
+        cursor: pointer;
+        border: solid #F7A437 3px;
+        background-color: #FAC177;
+        text-align: center;
     }
 }
