@@ -151,11 +151,43 @@ section {
 }
 
 
+.opper_footer {
+    width: 100%;
+    height: 50vw;
+    background-color: #9C9E9F;
+}
+
+footer {
+    width: 100%;
+    height: 6vw;
+    background-color: #D8D9D9;
+}
+
 
 @media only screen and (max-width: 677px) {
 
     #mobile {
         display: block;
+    }
+
+    .lower_footer {
+        width: 100%;
+        height: 6vw;
+        background-color: #D8D9D9;
+    }
+
+    .top_footer {
+        width: 100%;
+        height: 50vw;
+        background-color: #9C9E9F;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .opper_footer {
+        display: none;
     }
 
     .mobile_middel {
