@@ -120,6 +120,26 @@ section {
     scroll-snap-align: start;
 }
 
+@media only screen and (max-width: 677px) {
+    .section pictur {
+        height: auto;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    .mobile_middel {
+        width: 100vw;
+        scroll-snap-type: y mandatory;
+    }
+
+
+    #desktop {
+        display: none;
+    }
+}
+
 
 @media only screen and (min-width: 700px) {
 
@@ -169,5 +189,9 @@ section {
     .container {
         display: flex;
         flex-direction: row;
+    }
+
+    #mobile {
+        display: none;
     }
 }
