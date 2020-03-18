@@ -23,7 +23,7 @@ h3 {
 
 h2 {
     font-family: helvetica neue;
-    color: #093A82;
+    color: #FAC177;
     padding: 0;
     margin: 20px;
     font-size: 2em;
@@ -75,6 +75,7 @@ p {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .hero {
@@ -128,7 +129,7 @@ a {
 
 section {
     scroll-snap-align: start;
-    border: solid 1px white;
+
 }
 
 .section_text {
@@ -210,9 +211,10 @@ footer {
         height: auto;
         position: relative;
         cursor: pointer;
-        border: solid #F7A437 3px;
+        border: solid #093A82 3px;
         background-color: #FAC177;
         text-align: center;
+        border-radius: 25px;
     }
 
     .button h2 {
@@ -224,13 +226,19 @@ footer {
         padding-bottom: 10vw;
 
     }
+
+    .section_pictur {
+        height: auto;
+        padding-bottom: 10vw;
+
+    }
 }
 
 
 @media only screen and (max-width: 768px) {
 
     .logo_lille {
-        height: 15vw;
+        height: 20vw;
     }
 
     #desktop {
@@ -261,9 +269,10 @@ footer {
         height: auto;
         position: relative;
         cursor: pointer;
-        border: solid #F7A437 3px;
-        background-color: #FAC177;
+        border: solid #093A82 3px;
+        background-color: #093A82;
         text-align: center;
+        border-radius: 25px;
     }
 
     .button h2 {
@@ -274,6 +283,14 @@ footer {
         height: auto;
         padding-bottom: 10vw;
 
+    }
+
+    footer {
+        display: none;
+    }
+
+    .opper_footer {
+        display: none;
     }
 
 }
@@ -350,8 +367,9 @@ footer {
         height: 9vw;
         position: relative;
         cursor: pointer;
-        border: solid #F7A437 3px;
-        background-color: #FAC177;
+        border: solid #093A82 3px;
+        background-color: #093A82;
         text-align: center;
+        border-radius: 25px;
     }
 }
