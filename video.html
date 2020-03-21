@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    body {
+        background: #FAC177;
+        height: 100vw;
+        transition: 0.3s all;
+    }
+
+    .changeColor {
+        background: #093A82;
+    }
+
+    #can {
+        height: 10vw;
+        width: 10vw;
+    }
+
+</style>
+
+<body>
+
+    <div id="can"> </div>
+    <input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $("body").addClass("changeColor");
+                }
+                if ($(this).scrollTop() < 50) {
+                    $("body").removeClass("changeColor");
+                }
+            });
+        });
+
+        function upload() {
+            var imgcanvas = document.getElementById("can");
+            var fileinput = document.getElementById("finput");
+            var image = new SimpleImage(fileinput);
+            image.drawTo(imgcanvas);
+        }
+
+    </script>
+</body>
+
+</html>
