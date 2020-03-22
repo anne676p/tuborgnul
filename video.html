@@ -19,22 +19,15 @@
         background: #093A82;
     }
 
-    #can {
-        height: 10vw;
-        width: 10vw;
-    }
-
 </style>
 
 <body>
-
-    <div id="can"> </div>
-    <input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()">
-
-
+    <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+    <label for="file" style="cursor: pointer;">Upload Image</label>
+    <input type="submit" name="upload" value="send">
+    <img id="output" width="200" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
     <script>
         $(function() {
             $(window).scroll(function() {
@@ -47,12 +40,11 @@
             });
         });
 
-        function upload() {
-            var imgcanvas = document.getElementById("can");
-            var fileinput = document.getElementById("finput");
-            var image = new SimpleImage(fileinput);
-            image.drawTo(imgcanvas);
-        }
+
+        var loadFile = function(event) {
+            var image = document.getElementById("output");
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
 
     </script>
 </body>
