@@ -4,6 +4,10 @@
 
 body {
     display: block;
+    position: absolute;
+    top: -0.6vw;
+    z-index: 1;
+    width: 100%;
 }
 
 div {
@@ -46,6 +50,8 @@ p {
     height: 105px;
     width: 100vw;
     background-color: #FAC177;
+    position: relative;
+    z-index: 2;
 }
 
 .logo_stor {

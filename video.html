@@ -11,6 +11,10 @@
 
 <style>
     body {
+        position: absolute;
+        top: -0.6vw;
+        z-index: 1;
+        width: 100%;
         background: #093A82;
         transition: 0.3s all;
     }
@@ -217,38 +221,39 @@
             </a>
         </div>
     </div>
-
-    <section class="topper">
-        <h1> Deltagere i konkurrencen om et års forbrug af Tuborg Nul! #bareenØl</h1>
-        <div class="midde">
-            <div class="konkurrence_wrapper">
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
+    <div id="body">
+        <section class="topper">
+            <h1> Deltagere i konkurrencen om et års forbrug af Tuborg Nul! #bareenØl</h1>
+            <div class="midde">
+                <div class="konkurrence_wrapper">
+                    <div class="box"> </div>
+                    <div class="box"> </div>
+                    <div class="box"> </div>
+                    <div class="box"> </div>
+                    <div class="box"> </div>
+                    <div class="box"> </div>
+                    <div class="box"> </div>
+                    <div class="box"> </div>
+                </div>
+                <div class="scrolldeltag">
+                    <h4 id="scrollstort"> Scroll ned og deltag!</h4>
+                    <h4 id="scrolllille"> Tryk på pilen og deltag!</h4>
+                    <a href="#bund">
+                        <div id="pil"></div>
+                    </a>
+                </div>
             </div>
-            <div class="scrolldeltag">
-                <h4 id="scrollstort"> Scroll ned og deltag!</h4>
-                <h4 id="scrolllille"> Tryk på pilen og deltag!</h4>
-                <a href="#bund">
-                    <div id="pil"></div>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="under">
-        <div id="bund"></div>
-        <div class="tilfoj"><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
-            <label for="file" style="cursor: pointer;">Tilføj billede</label></div>
-        <div class="output"> <img id="output" /></div>
-        <input type="text" name="billedetekst" id="billedetekst" value="Hvad sker der på billedet? f.eks. fredag aften skal fejres med en Tuborg Nul!...">
-        <div class="tilfoj" style="margin-top: 1vw;"> Uploade </div>
-    </section>
+        <section class="under">
+            <div id="bund"></div>
+            <div class="tilfoj"><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+                <label for="file" style="cursor: pointer;">Tilføj billede</label></div>
+            <div class="output"> <img id="output" /></div>
+            <input type="text" name="billedetekst" id="billedetekst" value="Hvad sker der på billedet? f.eks. fredag aften skal fejres med en Tuborg Nul!...">
+            <div class="tilfoj" style="margin-top: 1vw;"> Uploade </div>
+        </section>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
         $(function() {
