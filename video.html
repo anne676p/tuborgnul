@@ -6,36 +6,261 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 
 <style>
     body {
-        background: #FAC177;
-        height: 100vw;
+        background: #093A82;
         transition: 0.3s all;
     }
 
     .changeColor {
-        background: #093A82;
+        background: #FAC177;
     }
+
+    .hide {
+        filter: blur(2px);
+    }
+
+    h1 {
+        color: #BEE0D9;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+        color: #BEE0D9;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .midde {
+        margin: 5vw;
+    }
+
+    .konkurrence_wrapper {
+        position: relative;
+        height: 50vh;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 1fr;
+        margin-top: -4vw;
+    }
+
+    .box {
+        background-color: white;
+    }
+
+    #pil {
+        height: 53.2px;
+        width: 130px;
+        position: relative;
+        background-image: url(IMG/pil.svg);
+    }
+
+    .under {
+        margin-bottom: 10vw;
+    }
+
+    .tilfoj {
+        height: 70px;
+        width: 580px;
+        border-radius: 25px;
+        text-align: center;
+        background-color: #093A82;
+        color: #FAC177;
+        font-family: 'Abril Fatface', cursive;
+        padding-top: 0.5vw;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        position: relative;
+        left: 29%;
+        cursor: pointer;
+    }
+
+    .output {
+        width: 580px;
+        max-height: 500px;
+        min-height: 100px;
+        position: relative;
+        left: 29%;
+        background-color: white;
+    }
+
+    #output {
+        width: 580px;
+        max-height: 500px;
+    }
+
+    #billedetekst {
+        width: 580px;
+        height: 50px;
+        margin-top: 1vw;
+        position: relative;
+        left: 29%;
+        padding: 1vw;
+        font-style: italic;
+        color: grey;
+    }
+
+
+    @media only screen and (min-width: 677px) {
+        #scrolllille {
+            display: none;
+        }
+
+        .topper {
+            margin-top: 5vw;
+        }
+
+        #pil {
+            left: 45%;
+        }
+    }
+
+
+    @media only screen and (max-width: 677px) {
+
+        .konkurrence_wrapper {
+            margin-top: 5vw;
+            height: 100vh;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        #scrollstort {
+            display: none;
+        }
+
+
+        .midde {
+            margin: 5vw;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .scrolldeltag {
+            position: relative;
+            justify-content: center;
+        }
+
+        .box {
+            height: 30vw;
+        }
+
+        #pil {
+            left: 35%;
+        }
+
+        .tilfoj {
+            height: 70px;
+            width: 400px;
+            border-radius: 25px;
+            text-align: center;
+            background-color: #093A82;
+            color: #FAC177;
+            font-family: 'Abril Fatface', cursive;
+            padding-top: 1vw;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            position: relative;
+            left: 10%;
+        }
+
+        .output {
+            width: 400px;
+            max-height: 500px;
+            min-height: 100px;
+            position: relative;
+            left: 10%;
+            background-color: white;
+        }
+
+        #output {
+            width: 400px;
+            max-height: 500px;
+        }
+
+        #billedetekst {
+            width: 400px;
+            height: 60px;
+            margin-top: 1vw;
+            position: relative;
+            left: 10%;
+            padding: 1vw;
+            font-style: italic;
+            color: grey;
+        }
 
 </style>
 
 <body>
-    <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
-    <label for="file" style="cursor: pointer;">Upload Image</label>
-    <input type="submit" name="upload" value="send">
-    <img id="output" width="200" />
+    <div class="menu">
+        <div class="col1">
+            <a href="index.html"> <img class="logo_stor" src="IMG/logo.svg" alt="Tuborg Nul logo"> </a>
+            <a href="index.html"> <img class="logo_lille" src="IMG/logo.svg" alt="Tuborg Nul logo"> </a>
+        </div>
+        <div id="menuknap">☰</div>
+        <div class="col2">
+            <a href="index.html">
+                <h3> Tuborg nul </h3>
+            </a>
+            <a href="#callToAction">
+                <h3> Kampagne </h3>
+            </a>
+            <a href="index.html">
+                <h3> Videodokumentation </h3>
+            </a>
+        </div>
+    </div>
 
+    <section class="topper">
+        <h1> Deltagere i konkurrencen om et års forbrug af Tuborg Nul! #bareenØl</h1>
+        <div class="midde">
+            <div class="konkurrence_wrapper">
+                <div class="box"> </div>
+                <div class="box"> </div>
+                <div class="box"> </div>
+                <div class="box"> </div>
+                <div class="box"> </div>
+                <div class="box"> </div>
+                <div class="box"> </div>
+                <div class="box"> </div>
+            </div>
+            <div class="scrolldeltag">
+                <h4 id="scrollstort"> Scroll ned og deltag!</h4>
+                <h4 id="scrolllille"> Tryk på pilen og deltag!</h4>
+                <a href="#bund">
+                    <div id="pil"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="under">
+        <div id="bund"></div>
+        <div class="tilfoj"><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+            <label for="file" style="cursor: pointer;">Tilføj billede</label></div>
+        <div class="output"> <img id="output" /></div>
+        <input type="text" name="billedetekst" id="billedetekst" value="Hvad sker der på billedet? f.eks. fredag aften skal fejres med en Tuborg Nul!...">
+        <div class="tilfoj" style="margin-top: 1vw;"> uploade </div>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
         $(function() {
             $(window).scroll(function() {
                 if ($(this).scrollTop() > 50) {
                     $("body").addClass("changeColor");
+                    $(".topper").addClass("hide");
+
                 }
                 if ($(this).scrollTop() < 50) {
                     $("body").removeClass("changeColor");
+                    $(".topper").removeClass("hide");
                 }
             });
         });
@@ -45,6 +270,29 @@
             var image = document.getElementById("output");
             image.src = URL.createObjectURL(event.target.files[0]);
         };
+
+        document.addEventListener("DOMContentLoaded", sidenVises)
+
+        function sidenVises() {
+            //lytte efter klik på menuknap
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+        }
+
+        function toggleMenu() {
+            console.log("toggleMenu");
+            document.querySelector(".col2").classList.toggle("hidden");
+
+            //let variablen definere hvis menuen er skjult indeholder den class hidden
+
+            let erSkjult = document.querySelector(".col2").classList.contains("hidden");
+
+            //if else sætning med betingelse for textcontent, som udskriver noget i html
+            if (erSkjult == true) {
+                document.querySelector("#menuknap").textContent = "☰";
+            } else {
+                document.querySelector("#menuknap").textContent = "X";
+            }
+        }
 
     </script>
 </body>
