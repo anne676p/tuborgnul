@@ -18,10 +18,10 @@ div {
     box-sizing: border-box;
 }
 
-h3 {
+h3,
+h4 {
     font-family: 'Abril Fatface', cursive;
     font-family: 'Roboto', sans-serif;
-
     color: #093A82;
     font-size: 1.4em;
     letter-spacing: 1px;
