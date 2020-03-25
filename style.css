@@ -110,7 +110,7 @@ a {
 }
 
 .top_splash {
-    background-color: #2C5FA5;
+    background-color: #B0D9CD;
     position: relative;
     padding: 20px 20px 130px 20px;
     text-align: center;
@@ -134,13 +134,13 @@ a {
     left: 0;
     bottom: auto;
     margin: 0;
-    color: white;
+    color: #093A82;
     font-family: 'Roboto', sans-serif;
 }
 
 
 .bottom_splash {
-    background-color: #B0D9CD;
+    background-color: #093A82;
     padding: 30px 20px 50px 20px;
     text-align: center;
 
@@ -153,7 +153,7 @@ a {
 .bottom_splash h2 {
     margin: 0;
     padding: 0;
-    color: #F2B366;
+    color: white;
 
 }
 
@@ -556,7 +556,6 @@ ul {
         position: relative;
         font-size: 8em;
         margin: 0;
-        color: white;
         font-family: 'Roboto', sans-serif;
         left: 10%;
     }
@@ -646,7 +645,6 @@ ul {
 
     /***** SPLASH MQ *****/
     .top_splash {
-        background-color: #2C5FA5;
         position: relative;
         padding: 150px 20px 100px 20px;
         text-align: center;
@@ -663,14 +661,12 @@ ul {
         position: relative;
         font-size: 10em;
         margin: 0;
-        color: white;
         font-family: 'Roboto', sans-serif;
         left: 10%;
     }
 
 
     .bottom_splash {
-        background-color: #B0D9CD;
         padding: 30px 20px 50px 20px;
         text-align: center;
 
@@ -683,7 +679,6 @@ ul {
     .bottom_splash h2 {
         margin: 0;
         padding: 0;
-        color: #F2B366;
         font-size: 4em;
 
     }
