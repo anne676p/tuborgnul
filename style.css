@@ -112,7 +112,7 @@ a {
 .top_splash {
     background-color: #2C5FA5;
     position: relative;
-    padding: 80px 20px 100px 20px;
+    padding: 20px 20px 130px 20px;
     text-align: center;
 }
 
@@ -123,14 +123,14 @@ a {
     padding: 0;
     top: 0;
     display: block;
-    height: 350px;
+    height: 200px;
 }
 
 .top_splash h1 {
     position: absolute;
     width: 100%;
     font-size: 5em;
-    top: 50%;
+    top: 25%;
     left: 0;
     bottom: auto;
     margin: 0;
@@ -523,12 +523,24 @@ ul {
 
 }
 
+@media only screen and (min-width: 411px) {
+    .top_splash img {
+        height: 300px;
+        top: 40px;
+    }
+}
+
 @media only screen and (min-width: 760px) {
     .top_splash img {
         position: absolute;
-        height: 450px;
+        height: 550px;
         top: 40px;
         right: 67%;
+    }
+
+    .top_splash {
+
+        padding: 150px 20px 100px 20px;
     }
 
     .top_splash h1 {
