@@ -367,6 +367,16 @@ section {
 /******* *******  **********/
 
 
+/******* *******  video **********/
+
+.tuborg_animation {
+    width: 100%;
+    height: auto;
+}
+
+/******* *******  **********/
+
+
 /******* ******* footer **********/
 
 .opper_footer {
@@ -748,5 +758,11 @@ ul {
         padding-left: 400px;
     }
 
+    /***__video mq___***/
+    #video {
+        padding 10rem;
+        margin: 10rem 20rem;
+        ;
+    }
 
 }
