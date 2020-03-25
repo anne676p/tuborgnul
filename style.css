@@ -49,7 +49,7 @@ p {
 .menu {
     height: 105px;
     width: 100vw;
-    background-color: #FAC177;
+    background-color: white;
     position: relative;
     z-index: 2;
 }
@@ -99,13 +99,141 @@ a {
     padding-bottom: 10px;
     width: 50%;
     left: 47%;
-    background-color: rgb(250, 193, 119, 0.96);
+    background-color: white;
 }
 
-.splash_movie {
-    width: 100vw;
-    height: 50vw;
+/******* SPLASH - AOT *******/
+
+.splash {
+    display: flex;
+    flex-direction: row;
 }
+
+.top_splash {
+    background-color: #2C5FA5;
+    position: relative;
+    padding: 80px 20px 100px 20px;
+    text-align: center;
+}
+
+.top_splash img {
+    position: relative;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    top: 0;
+    display: block;
+    height: 350px;
+}
+
+.top_splash h1 {
+    position: absolute;
+    width: 100%;
+    font-size: 5em;
+    top: 50%;
+    left: 0;
+    bottom: auto;
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.bottom_splash {
+    background-color: #B0D9CD;
+    padding: 30px 20px 50px 20px;
+    text-align: center;
+
+}
+
+.bottomtxt {
+    padding-left: 20px;
+}
+
+.bottom_splash h2 {
+    margin: 0;
+    padding: 0;
+    color: #F2B366;
+
+}
+
+.bottom_splash .bot1 {}
+
+.bottom_splash .bot2 {}
+
+.fade_in {
+    animation-name: fade_in_kf;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+
+@keyframes fade_in_kf {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translate3d(-1px, 10vw, 0);
+
+
+    }
+
+    20% {
+        transform: translate3d(2px, 8vw, 0);
+    }
+
+    30% {
+        transform: translate3d(-4px, 7vw, 0);
+    }
+
+    40% {
+        transform: translate3d(4px, 6vw, 0);
+    }
+
+    50% {
+        transform: translate3d(-4px, 5vw, 0);
+    }
+
+    60% {
+        transform: translate3d(4px, 4vw, 0);
+    }
+
+    70% {
+        transform: translate3d(-4px, 3vw, 0);
+    }
+
+    80% {
+        transform: translate3d(2px, 2vw, 0);
+    }
+
+    90% {
+        transform: translate3d(-1px, 1vw, 0);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/******* ******* **********/
 
 .container {
     height: 50vh;
@@ -216,27 +344,27 @@ footer {}
     text-align: center;
 }
 
-.footer_bottom img{
+.footer_bottom img {
     margin-bottom: 65px;
     width: 100%;
     max-width: 346px;
 }
 
-.footer_bottom a{
-      color: #fff;
+.footer_bottom a {
+    color: #fff;
 }
 
-a{
+a {
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
 }
 
-li{
+li {
     font-size: inherit;
 }
 
-ul{
+ul {
     line-height: 1.7;
 }
 
@@ -266,7 +394,7 @@ ul{
         background-color: #093A82;
     }
 
-/*
+    /*
     footer {
         display: none;
     }
@@ -395,6 +523,28 @@ ul{
 
 }
 
+@media only screen and (min-width: 760px) {
+    .top_splash img {
+        position: absolute;
+        height: 450px;
+        top: 40px;
+        right: 67%;
+    }
+
+    .top_splash h1 {
+        position: relative;
+        font-size: 8em;
+        margin: 0;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        left: 10%;
+    }
+
+    .bottom_splash h2 {
+        font-size: 3em;
+    }
+}
+
 @media only screen and (min-width: 1000px) {
 
     h2 {
@@ -472,4 +622,58 @@ ul{
         text-align: center;
         border-radius: 25px;
     }
+
+    /***** SPLASH MQ *****/
+    .top_splash {
+        background-color: #2C5FA5;
+        position: relative;
+        padding: 150px 20px 100px 20px;
+        text-align: center;
+    }
+
+    .top_splash img {
+        position: absolute;
+        height: 550px;
+        top: 40px;
+        right: 67%;
+    }
+
+    .top_splash h1 {
+        position: relative;
+        font-size: 10em;
+        margin: 0;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        left: 10%;
+    }
+
+
+    .bottom_splash {
+        background-color: #B0D9CD;
+        padding: 30px 20px 50px 20px;
+        text-align: center;
+
+    }
+
+    .bottomtxt {
+        padding-left: ;
+    }
+
+    .bottom_splash h2 {
+        margin: 0;
+        padding: 0;
+        color: #F2B366;
+        font-size: 4em;
+
+    }
+
+    .bottom_splash .bot1 {
+        right: 50%;
+    }
+
+    .bottom_splash .bot2 {
+        padding-left: 400px;
+    }
+
+
 }
