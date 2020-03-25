@@ -40,6 +40,7 @@
 
     .midde {
         margin: 5vw;
+        width: 100%;
     }
 
     .konkurrence_wrapper {
@@ -50,11 +51,22 @@
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: 1fr;
         margin-top: -4vw;
+        margin-right: 4vw;
+        /*        max-width: 1500px*/
     }
 
-    .box {
-        background-color: white;
+    .konkurrence_wrapper img {
+        width: 100%;
+        margin-bottom: 25px;
     }
+
+
+    /*
+    .box {
+    background-color: white;
+    }
+*/
+
 
     #pil {
         height: 53.2px;
@@ -200,7 +212,6 @@
             font-style: italic;
             color: grey;
         }
-
 </style>
 
 <body>
@@ -227,23 +238,34 @@
             <h1> Deltagere i konkurrencen om et års forbrug af Tuborg Nul! #bareenØl</h1>
             <div class="midde">
                 <div class="konkurrence_wrapper">
-                    <div class="box"> </div>
-                    <div class="box"> </div>
-                    <div class="box"> </div>
-                    <div class="box"> </div>
-                    <div class="box"> </div>
-                    <div class="box"> </div>
-                    <div class="box"> </div>
-                    <div class="box"> </div>
+                    <img src="IMG/konkurrencebilleder/fireplace.png">
+                    <img src="IMG/konkurrencebilleder/flaske.png">
+                    <img src="IMG/konkurrencebilleder/flereflasker.png">
+                    <img src="IMG/konkurrencebilleder/Stabel.png">
+                    <img src="IMG/konkurrencebilleder/todaaser.png">
+                    <img src="IMG/konkurrencebilleder/todaaserp%C3%A5bord.png">
+                    <img src="IMG/konkurrencebilleder/tuborg_pitch.png">
+                    <img src="IMG/konkurrencebilleder/wetflaske.png">
+
+                    <!--
+                    <div class="box"><img src="IMG/konkurrencebilleder/fireplace.png"></div>
+                    <div class="box"><img src="IMG/konkurrencebilleder/flaske.png"></div>
+                    <div class="box"><img src="IMG/konkurrencebilleder/flereflasker.png"></div>
+                    <div class="box"><img src="IMG/konkurrencebilleder/Stabel.png"></div>
+                    <div class="box"><img src="IMG/konkurrencebilleder/todaaser.png"></div>
+                    <div class="box"><img src="IMG/konkurrencebilleder/todaaserp%C3%A5bord.png"></div>
+                    <div class="box"><img src="IMG/konkurrencebilleder/tuborg_pitch.png"></div>
+                    <div class="box"><img src="IMG/konkurrencebilleder/wetflaske.png"></div>
                 </div>
-                <div class="scrolldeltag">
-                    <h4 id="scrollstort"> Scroll ned og deltag!</h4>
-                    <h4 id="scrolllille"> Tryk på pilen og deltag!</h4>
-                    <a href="#bund">
-                        <div id="pil"></div>
-                    </a>
+-->
+                    <div class="scrolldeltag">
+                        <h4 id="scrollstort"> Scroll ned og deltag!</h4>
+                        <h4 id="scrolllille"> Tryk på pilen og deltag!</h4>
+                        <a href="#bund">
+                            <div id="pil"></div>
+                        </a>
+                    </div>
                 </div>
-            </div>
         </section>
 
         <section class="under">
@@ -299,8 +321,5 @@
                 document.querySelector("#menuknap").textContent = "X";
             }
         }
-
     </script>
-</body>
-
-</html>
+</body></html>
