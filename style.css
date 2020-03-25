@@ -497,14 +497,23 @@ ul {
         height: auto;
         position: relative;
         cursor: pointer;
-        border: solid #093A82 3px;
-        background-color: #FAC177;
+        border: solid #FAC177 1px;
+        background-color: white;
         text-align: center;
-        border-radius: 25px;
+    }
+
+    .button:hover {
+        color: white;
+        background: #FAC177;
+        border-color: white;
     }
 
     .button h2 {
         font-size: auto;
+    }
+
+    .button h2:hover {
+        color: white;
     }
 
     .section_text {
@@ -560,10 +569,9 @@ ul {
         height: auto;
         position: relative;
         cursor: pointer;
-        border: solid #093A82 3px;
-        background-color: #093A82;
+        border: solid #FAC177 1px;
+        background-color: white;
         text-align: center;
-        border-radius: 25px;
     }
 
     .button h2 {
@@ -697,10 +705,19 @@ ul {
         margin-top: 5vw;
         position: relative;
         cursor: pointer;
-        border: solid #093A82 3px;
-        background-color: #093A82;
+        border: solid #FAC177 1px;
+        background-color: white;
         text-align: center;
-        border-radius: 25px;
+    }
+
+    .button:hover {
+        color: white;
+        background: #FAC177;
+    }
+
+
+    .button h2:hover {
+        color: white;
     }
 
     /***** SPLASH MQ *****/
