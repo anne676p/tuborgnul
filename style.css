@@ -298,7 +298,7 @@ section {
 
 .tuborg_indhold {
     width: 100%;
-    height: 25vw;
+    height: 30vw;
     background-color: white;
     display: flex;
     flex-flow: row wrap;
@@ -360,6 +360,7 @@ section {
     left: 30vw;
     text-align: left;
     padding: 10vw;
+    padding-top: 5vw;
     position: absolute;
     display: flex;
 }
@@ -378,14 +379,6 @@ section {
 
 
 /******* ******* footer **********/
-
-.opper_footer {
-    width: 100%;
-    height: 50vw;
-    background-color: white;
-}
-
-footer {}
 
 .footer_main {
     background-color: #093A82;
@@ -451,6 +444,7 @@ ul {
 
     #mobile {
         display: block;
+        height: 100%;
     }
 
     .lower_footer {
@@ -490,21 +484,23 @@ ul {
 
     .tuborg_indhold {
         width: 100%;
-        height: 110vw;
-        background-color: white;
-        display: flex;
-        flex-flow: row wrap;
+        height: 90vw;
+        flex-direction: column;
     }
 
     .col_indhold {
-        height: 38vw;
-        padding-left: 0vw;
+        height: 35vw;
     }
 
 
     .mobile_middel {
         width: 100vw;
         scroll-snap-type: y mandatory;
+    }
+
+    .col {
+        left: 0vw;
+        top: 155vw;
     }
 
 
@@ -542,6 +538,10 @@ ul {
         height: auto;
         padding-bottom: 10vw;
 
+    }
+
+    #video_forside {
+        display: none;
     }
 
 }
@@ -597,14 +597,6 @@ ul {
 
     }
 
-    footer {
-        display: none;
-    }
-
-    .opper_footer {
-        display: none;
-    }
-
 }
 
 @media only screen and (min-width: 411px) {
@@ -647,8 +639,13 @@ ul {
 
 @media only screen and (min-width: 1000px) {
 
+    #desktop {
+        height: 50vw;
+        margin-bottom: 5px;
+    }
+
     h2 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     h3 {
@@ -657,8 +654,12 @@ ul {
     }
 
     h1 {
-        font-size: 5em;
+        font-size: 4em;
 
+    }
+
+    p {
+        font-size: 1.2em;
     }
 
     .menu {
@@ -712,9 +713,9 @@ ul {
     }
 
     .button {
-        margin-top: 7vw;
         width: 45vw;
-        height: 9vw;
+        height: 7vw;
+        margin-top: 5vw;
         position: relative;
         cursor: pointer;
         border: solid #093A82 3px;
@@ -769,6 +770,12 @@ ul {
 
     .bottom_splash .bot2 {
         padding-left: 400px;
+    }
+
+    #video_forside {
+        width: 50%;
+        position: relative;
+        left: 25%;
     }
 
     /***__video mq___***/
