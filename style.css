@@ -161,6 +161,10 @@ a {
 
 .bottom_splash .bot2 {}
 
+.shadow {
+    filter: drop-shadow(0px 0px 5px black);
+}
+
 .fade_in {
     animation-name: fade_in_kf;
     animation-iteration-count: 1;
@@ -527,6 +531,11 @@ ul {
     .top_splash img {
         height: 300px;
         top: 40px;
+    }
+
+    .top_splash {
+
+        padding: 50px 20px 80px 20px;
     }
 }
 
