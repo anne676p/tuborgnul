@@ -20,6 +20,8 @@ div {
 
 h3 {
     font-family: 'Abril Fatface', cursive;
+    font-family: 'Roboto', sans-serif;
+
     color: #093A82;
     font-size: 1.4em;
     letter-spacing: 1px;
@@ -35,6 +37,7 @@ h2 {
 
 h1 {
     font-family: 'Abril Fatface', cursive;
+    font-family: 'Roboto', sans-serif;
     color: #FAC177;
     font-size: 4em;
     letter-spacing: 1px;
@@ -81,6 +84,7 @@ p {
 a {
     text-decoration: none;
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hero {
@@ -289,32 +293,86 @@ section {
 }
 
 
+/******* ******* tekst indhold bokse **********/
+
 .tuborg_indhold {
     width: 100%;
     height: 25vw;
-    background-color: #D8D9D9;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
 }
+
+.col_indhold{
+    top: 15px;
+    left: 15vw;
+    text-align: center;
+    padding: 10vw;
+    display: flex;
+    z-index: 2;
+
+}
+
+.col_indhold a{
+    letter-spacing: 2.5px;
+    max-width: 310px;
+    height: auto;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    display: inline-block;
+    border: 2px solid #FAC177;
+    border-radius: 3px;
+    margin: 2vw;
+    background-color: white;
+}
+
+.col_indhold span{
+    border-color: white;
+    color: #FAC177;
+
+}
+
+.col_indhold span:hover{
+    color: white;
+    background: #FAC177;
+}
+
+.col_indhold a:hover{
+    background-color:#FAC177;
+        color: white;
+
+}
+
+
 
 .col p {
     color: black;
     letter-spacing: 1px;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    font-weight: 330;
 
 }
 
 .col {
     left: 30vw;
-    text-align: right;
+    text-align: left;
     padding: 10vw;
     position: absolute;
     display: flex;
 }
 
+/******* *******  **********/
+
+
+/******* ******* footer **********/
+
 .opper_footer {
     width: 100%;
     height: 50vw;
-    background-color: #D8D9D9;
+    background-color: white;
 }
-
 
 footer {}
 
@@ -342,6 +400,7 @@ footer {}
 
 .footer_bottom {
     background-color: #D8D9D5;
+    background-color: #9C9E9F;
     font-size: 14px;
     padding: 90px 0 30px 0;
     font-weight: 400;
@@ -373,10 +432,7 @@ ul {
 }
 
 
-
-
-
-
+/******* ******* **********/
 
 
 
