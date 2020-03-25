@@ -211,7 +211,6 @@
             font-style: italic;
             color: grey;
         }
-
 </style>
 
 <body>
@@ -274,12 +273,12 @@
     <script>
         $(function() {
             $(window).scroll(function() {
-                if ($(this).scrollTop() > 50) {
+                if ($(this).scrollTop() > 500) {
                     $("body").addClass("changeColor");
                     $(".topper").addClass("hide");
 
                 }
-                if ($(this).scrollTop() < 50) {
+                if ($(this).scrollTop() < 500) {
                     $("body").removeClass("changeColor");
                     $(".topper").removeClass("hide");
                 }
@@ -314,8 +313,5 @@
                 document.querySelector("#menuknap").textContent = "X";
             }
         }
-
     </script>
-</body>
-
-</html>
+</body></html>
