@@ -66,7 +66,7 @@ p {
     height: 30vw;
     margin-left: 3vw;
     margin-top: 5vw;
-    background-color: #FAC177;
+    background-color: white;
     border-radius: 250px;
     position: absolute;
 }
@@ -304,7 +304,7 @@ section {
     flex-flow: row wrap;
 }
 
-.col_indhold{
+.col_indhold {
     top: 15px;
     left: 15vw;
     text-align: center;
@@ -314,7 +314,7 @@ section {
 
 }
 
-.col_indhold a{
+.col_indhold a {
     letter-spacing: 2.5px;
     max-width: 310px;
     height: auto;
@@ -328,20 +328,20 @@ section {
     background-color: white;
 }
 
-.col_indhold span{
+.col_indhold span {
     border-color: white;
     color: #FAC177;
 
 }
 
-.col_indhold span:hover{
+.col_indhold span:hover {
     color: white;
     background: #FAC177;
 }
 
-.col_indhold a:hover{
-    background-color:#FAC177;
-        color: white;
+.col_indhold a:hover {
+    background-color: #FAC177;
+    color: white;
 
 }
 
@@ -650,7 +650,7 @@ ul {
     .logo_stor {
         display: block;
         position: absolute;
-        background-color: #FAC177;
+        background-color: white;
         border-radius: 250px;
         height: 12vw;
         margin-left: 3vw;
